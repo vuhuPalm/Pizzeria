@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div class="container">
+    <div class="content">
+        <h1>Dylan's Pizzeria</h1>
+        <form>
+            <fieldset>
+                <legend>Customer:</legend>
+                <div class="row">
+                    <div>
+                        <label for="firstname">First</label>
+                        <input id="firstname" name="first_name" type="text">
+                    </div>
+                    <div>
+                        <label for="lastname">Last</label>
+                        <input id="lastname" name="last_name" type="text">
+                    </div>
+                </div>
+            </fieldset>
+            <div class="row">
+                <fieldset>
+                    <legend>Combos:</legend>
+                    <div>
+                        <input type="radio" id="pepMeal" name="pepMeal">
+                        <label for="pepMeal">Pepperoni Pizza</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="mushMeal" name="mushMeal">
+                        <label for="mushMeal">Mushroom Pizza</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="chesMeal" name="chesMeal">
+                        <label for="chesMeal">Cheese Pizza</label>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Size:</legend>
+                    <div>
+                        <input type="radio" id="small" name="size">
+                        <label for="small">Small</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="medium" name="size">
+                        <label for="medium">Medium</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="large" name="size">
+                        <label for="large">Large</label>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Toppings:</legend>
+                    <div>
+                        <input type="checkbox" id="pepp" name="pepp" value="pepp">
+                        <label for="pepp">Pepperoni</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="olv" name="olv" value="olv">
+                        <label for="olv">Olives</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="sausage" name="sausage" value="sausage">
+                        <label for="sausage">Sausage</label>
+                    </div>
+                </fieldset>
+            </div>
+            <fieldset>
+                <legend>Delivery:</legend>
+                <div>
+                    <label for="address">Address:</label>
+                    <input id="address" name="address" type="address">
+                </div>
+                <div>
+                    <input type="checkbox" id="pick" name="pick" value="pick">
+                    <label for="pick">Pick-Up</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="place" name="place" value="place">
+                    <label for="place">At the restaurant</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="delivery" name="delivery" value="delivery">
+                    <label for="delivery">Delivery</label>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Special:</legend>
+                <label for="SpecialRequests">Special Requests:</label>
+                <textarea id="SpecialRequests" name="SpecialRequests" rows="4" cols="10"
+                          placeholder="Allergic to the sauce, substitutions, etc"></textarea>
+            </fieldset>
+            <button type="button" onclick="alert('Free today for our Grand Opening!')">Calculate Cost</button>
+            <button type="submit">Submit Order</button>
+        </form>
+    </div>
+</div>
+</body>
+</html>
